@@ -57,65 +57,52 @@ The provided Python code is structured as follows:
 
 3. **Connect Function:**
 
-```python
-def connect():
-    global connection
-    try:
-        connection = con.connect(
-            host="localhost",
-            user="UserName",
-            password="Enter Your Password",
-            database="Contact"
-        )
-        print("Connected!")
-        setup()
-    except Error as e:
-        print("The error '{}' ".format(e))
-        sys.exit()
-```
-   
+   ```python
+   def connect():
+      global connection
+       try:
+         connection = con.connect(
+            host="localhost",
+            user="root",
+            password="123456",
+            database="Contact"
+           )
+         print("Connected!")
+         setup()
+      except Error as e:
+         print("The error '{}' ".format(e))
+        sys.exit()
+   ```   
    - Establishes a connection to the MySQL database.
    - Uses the provided credentials to connect.
    - Calls the setup function after successful connection.
 
 4. **Setup Function:**
 
-```
-   def setup():
-       global connection
-       stmt = connection.cursor()
-       try:
-           query = """
-           CREATE TABLE IF NOT EXISTS people (
-               id INT AUTO_INCREMENT PRIMARY KEY,
-               name VARCHAR(10) NOT NULL,
-               phone_no VARCHAR(10) NOT NULL,
-               address VARCHAR(10) NULL,
-               date DATE NOT NULL
-           );
-           """
-           stmt.execute(query)
-           connection.commit()
-           print("SetUp Done!")
-           ...
-       except Error as e:
-           ...
-       finally:
-           stmt.close()
+   ```python
+   query = """
+        CREATE TABLE IF NOT EXISTS people (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            name VARCHAR(10) NOT NULL,
+            phone_no VARCHAR(10) NOT NULL,
+            address VARCHAR(10) NULL,
+            date DATE NOT NULL
+        );
+        """
    ```
 
    - Creates the people table in the database if it doesn't already exist.
    - Defines the table structure with columns for `id`, `name`, `phone_no`, `address`, and `date`.
-
-5. **Other Functions:**
+      
+6. **Other Functions:**
    
    - `display()`: Displays all contacts stored in the database.
    - `add()`: Adds a new contact to the database.
    - `delete()`: Deletes a contact from the database.
-   - `update(`): Updates existing contact information.
+   - `update()`: Updates existing contact information.
    - `search_contacts()`: Searches for contacts by name or phone number.
   
-6. **Main Function:**
+7. **Main Function:**
 
    ```python
    # Main Function
@@ -166,7 +153,7 @@ def connect():
    - The `main()` function serves as the main execution loop for the application.
    - It presents the menu options to the user and calls the appropriate functions based on user input.
 
-7. **Running the Code:**
+8. **Running the Code:**
    ![Description](https://github.com/ShahbazCoder1/Contactfy---Contact-App/blob/main/Screenshots/Screenshot%202024-05-25%20102504.png)
    
    ![Description](https://github.com/ShahbazCoder1/Contactfy---Contact-App/blob/main/Screenshots/Screenshot%202024-05-25%20102549.png)
