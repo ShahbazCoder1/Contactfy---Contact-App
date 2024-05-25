@@ -154,12 +154,13 @@ The provided Python code is structured as follows:
    - It presents the menu options to the user and calls the appropriate functions based on user input.
 
 8. **Running the Code:**
+
+   - The `connect()` function is called to establish a connection to the database.
+   - The `main()` function is called to start the application.
    
    ![Description](https://github.com/ShahbazCoder1/Contactfy---Contact-App/blob/main/Screenshots/Screenshot%202024-05-25%20102504.png)
    
    ![Description](https://github.com/ShahbazCoder1/Contactfy---Contact-App/blob/main/Screenshots/Screenshot%202024-05-25%20102549.png)
-   - The `connect()` function is called to establish a connection to the database.
-   - The `main()` function is called to start the application.
   
 ## Conclusion
 This simple contact management application demonstrates how to use Python to interact with a MySQL database for basic data storage and manipulation. It provides a foundation for building more complex contact management applications with features like search filtering, data visualization, and user authentication.
