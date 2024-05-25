@@ -10,6 +10,15 @@ This Python application is a basic contact management system designed to store, 
 * **Delete Contacts:** Remove contact entries.
 * **Search Contacts:** Search for contacts by name or phone number.
 
+## Screenshots
+
+<table style="width:100%;">
+  <tr>
+    <td style="width:33.33%;"><img src="https://github.com/ShahbazCoder1/Contactfy---Contact-App/blob/main/Screenshots/Screenshot%202024-05-25%20102504.png" alt="Screenshot 1" style="width:100%; height:auto;"/></td>
+    <td style="width:33.33%;"><img src="https://github.com/ShahbazCoder1/Contactfy---Contact-App/blob/main/Screenshots/Screenshot%202024-05-25%20102549.png" alt="Screenshot 2" style="width:100%; height:auto;"/></td>
+    <td style="width:33.33%;"><img src="https://github.com/ShahbazCoder1/Contactfy---Contact-App/blob/main/Screenshots/IMG_20240525_112900.jpg" alt="Screenshot 3" style="width:100%; height:auto;"/></td>
+  </tr>
+</table>
 
 ## Setup
 
@@ -94,7 +103,7 @@ The provided Python code is structured as follows:
    - Creates the people table in the database if it doesn't already exist.
    - Defines the table structure with columns for `id`, `name`, `phone_no`, `address`, and `date`.
       
-6. **Other Functions:**
+5. **Other Functions:**
    
    - `display()`: Displays all contacts stored in the database.
    - `add()`: Adds a new contact to the database.
@@ -102,7 +111,7 @@ The provided Python code is structured as follows:
    - `update()`: Updates existing contact information.
    - `search_contacts()`: Searches for contacts by name or phone number.
   
-7. **Main Function:**
+6. **Main Function:**
 
    ```python
    # Main Function
@@ -153,14 +162,10 @@ The provided Python code is structured as follows:
    - The `main()` function serves as the main execution loop for the application.
    - It presents the menu options to the user and calls the appropriate functions based on user input.
 
-8. **Running the Code:**
+7. **Running the Code:**
 
    - The `connect()` function is called to establish a connection to the database.
    - The `main()` function is called to start the application.
    
-   ![Description](https://github.com/ShahbazCoder1/Contactfy---Contact-App/blob/main/Screenshots/Screenshot%202024-05-25%20102504.png)
-   
-   ![Description](https://github.com/ShahbazCoder1/Contactfy---Contact-App/blob/main/Screenshots/Screenshot%202024-05-25%20102549.png)
-  
 ## Conclusion
 This simple contact management application demonstrates how to use Python to interact with a MySQL database for basic data storage and manipulation. It provides a foundation for building more complex contact management applications with features like search filtering, data visualization, and user authentication.
