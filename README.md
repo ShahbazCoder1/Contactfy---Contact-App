@@ -109,11 +109,11 @@ def setup():
 
 5. **Other Functions:**
    
-   - display(): Displays all contacts stored in the database.
-   - add(): Adds a new contact to the database.
-   - delete(): Deletes a contact from the database.
-   - update(): Updates existing contact information.
-   - search_contacts(): Searches for contacts by name or phone number.
+   - `display()`: Displays all contacts stored in the database.
+   - `add()`: Adds a new contact to the database.
+   - `delete()`: Deletes a contact from the database.
+   - `update(`): Updates existing contact information.
+   - `search_contacts()`: Searches for contacts by name or phone number.
   
 6. **Main Function:**
 
@@ -163,14 +163,15 @@ def main():
             sys.exit()
 ```
 
-   - The main() function serves as the main execution loop for the application.
+   - The `main()` function serves as the main execution loop for the application.
    - It presents the menu options to the user and calls the appropriate functions based on user input.
 
 7. **Running the Code:**
-
-
-   - The connect() function is called to establish a connection to the database.
-   - The main() function is called to start the application.
+   ![Description](https://github.com/ShahbazCoder1/Contactfy---Contact-App/blob/main/Screenshots/Screenshot%202024-05-25%20102504.png)
+   
+   ![Description](https://github.com/ShahbazCoder1/Contactfy---Contact-App/blob/main/Screenshots/Screenshot%202024-05-25%20102549.png)
+   - The `connect()` function is called to establish a connection to the database.
+   - The `main()` function is called to start the application.
   
 ## Conclusion
 This simple contact management application demonstrates how to use Python to interact with a MySQL database for basic data storage and manipulation. It provides a foundation for building more complex contact management applications with features like search filtering, data visualization, and user authentication.
