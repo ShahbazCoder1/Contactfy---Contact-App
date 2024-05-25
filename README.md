@@ -80,29 +80,29 @@ def connect():
 
 4. **Setup Function:**
 
-```python
-def setup():
-    global connection
-    stmt = connection.cursor()
-    try:
-        query = """
-        CREATE TABLE IF NOT EXISTS people (
-            id INT AUTO_INCREMENT PRIMARY KEY,
-            name VARCHAR(10) NOT NULL,
-            phone_no VARCHAR(10) NOT NULL,
-            address VARCHAR(10) NULL,
-            date DATE NOT NULL
-        );
-        """
-        stmt.execute(query)
-        connection.commit()
-        print("SetUp Done!")
-        ...
-    except Error as e:
-        ...
-    finally:
-        stmt.close()
 ```
+   def setup():
+       global connection
+       stmt = connection.cursor()
+       try:
+           query = """
+           CREATE TABLE IF NOT EXISTS people (
+               id INT AUTO_INCREMENT PRIMARY KEY,
+               name VARCHAR(10) NOT NULL,
+               phone_no VARCHAR(10) NOT NULL,
+               address VARCHAR(10) NULL,
+               date DATE NOT NULL
+           );
+           """
+           stmt.execute(query)
+           connection.commit()
+           print("SetUp Done!")
+           ...
+       except Error as e:
+           ...
+       finally:
+           stmt.close()
+   ```
 
    - Creates the people table in the database if it doesn't already exist.
    - Defines the table structure with columns for `id`, `name`, `phone_no`, `address`, and `date`.
