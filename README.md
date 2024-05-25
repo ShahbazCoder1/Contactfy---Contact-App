@@ -117,51 +117,51 @@ def setup():
   
 6. **Main Function:**
 
-```python
-# Main Function
-def main():
-    while True:
-        print("+-----------------------------------+")
-        print("| %-33s |" % "Menu")
-        print("+-----------------------------------+")
-        print("| Enter '1' for Adding a Contact    |")
-        print("| Enter '2' for Updating a Contact  |")
-        print("| Enter '3' for Searching a Contact |")
-        print("| Enter '4' for Deleting a Contact  |")
-        print("| Enter '5' for Viewing All Contact |")
-        print("+-----------------------------------+")
-        ch = int(input("Enter your Choice: "))
-        print("")
-        if ch == 1:
-            while True:
-                add()
-                fr = input("Do you want to ENTER more Contacts ('Y' or 'N'):")
-                if fr.lower() == 'n':
-                    break
-        elif ch == 2:
-            while True:
-                update()
-                fr = input("Do you want to UPDATE more Contacts ('Y' or 'N'):")
-                if fr.lower() == 'n':
-                    break
-        elif ch == 3:
-            while True:
-                search_contacts()
-                fr = input("Do you want to SEARCH more Contacts ('Y' or 'N'):")
-                if fr.lower() == 'n':
-                    break
-        elif ch == 4:
-            while True:
-                delete()
-                fr = input("Do you want to DELETE more Contacts ('Y' or 'N'):")
-                if fr.lower() == 'n':
-                    break
-        elif ch == 5:
-            display()
-        else:
-            print("The End!")
-            sys.exit()
-```
+   ```python
+   # Main Function
+   def main():
+       while True:
+           print("+-----------------------------------+")
+           print("| %-33s |" % "Menu")
+           print("+-----------------------------------+")
+           print("| Enter '1' for Adding a Contact    |")
+           print("| Enter '2' for Updating a Contact  |")
+           print("| Enter '3' for Searching a Contact |")
+           print("| Enter '4' for Deleting a Contact  |")
+           print("| Enter '5' for Viewing All Contact |")
+           print("+-----------------------------------+")
+           ch = int(input("Enter your Choice: "))
+           print("")
+           if ch == 1:
+               while True:
+                   add()
+                  fr = input("Do you want to ENTER more Contacts ('Y' or 'N'):")
+                   if fr.lower() == 'n':
+                       break
+           elif ch == 2:
+               while True:
+                   update()
+                   fr = input("Do you want to UPDATE more Contacts ('Y' or 'N'):")
+                   if fr.lower() == 'n':
+                       break
+           elif ch == 3:
+               while True:
+                   search_contacts()
+                   fr = input("Do you want to SEARCH more Contacts ('Y' or 'N'):")
+                   if fr.lower() == 'n':
+                       break
+           elif ch == 4:
+               while True:
+                   delete()
+                   fr = input("Do you want to DELETE more Contacts ('Y' or 'N'):")
+                   if fr.lower() == 'n':
+                       break
+           elif ch == 5:
+               display()
+           else:
+               print("The End!")
+               sys.exit()
+   ```
 
    - The `main()` function serves as the main execution loop for the application.
    - It presents the menu options to the user and calls the appropriate functions based on user input.
