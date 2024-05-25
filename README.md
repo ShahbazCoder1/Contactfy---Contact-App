@@ -29,7 +29,7 @@ This Python application is a basic contact management system designed to store, 
 2. **Execute the Code:** Run the script from your terminal:
 
    ```bash
-   python contactfy.py
+   python main.py
 3. **Interact with the Menu:** Follow the on-screen menu options to add, update, delete, search, or view contacts.
 
 ## Code Breakdown
@@ -154,6 +154,7 @@ The provided Python code is structured as follows:
    - It presents the menu options to the user and calls the appropriate functions based on user input.
 
 8. **Running the Code:**
+   
    ![Description](https://github.com/ShahbazCoder1/Contactfy---Contact-App/blob/main/Screenshots/Screenshot%202024-05-25%20102504.png)
    
    ![Description](https://github.com/ShahbazCoder1/Contactfy---Contact-App/blob/main/Screenshots/Screenshot%202024-05-25%20102549.png)
