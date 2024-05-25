@@ -25,7 +25,7 @@ This Python application is a basic contact management system designed to store, 
 5. **Configure Credentials:** In the provided Python code, replace the placeholder values for host, user, password, and database with your actual MySQL database credentials.
 
 ## Running the Application
-1. **Save the Code:** Save the provided Python code as a file named main.py.
+1. **Save the Code:** Save the provided Python code as a file named `main.py`.
 2. **Execute the Code:** Run the script from your terminal:
 
    ```bash
